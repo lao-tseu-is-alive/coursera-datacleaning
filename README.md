@@ -4,15 +4,15 @@ This file [README.md] explains how to use the script run_analysis.R.
 The purpose of this project is to demonstrate ability to collect, work with, and clean a data set. 
 
 ## INSTRUCTIONS : *short version in 3 steps* 
-1. Clone this repository on your computer under your favorite command line shell with:
+1. Clone this repository on your computer under your favorite command line shell with:<br>
    **git clone https://github.com/lao-tseu-is-alive/coursera-datacleaning.git**
-2. Go inside the directory project
+2. Go inside the directory project:<br>
    **cd coursera-datacleaning**
-3. Run the main script written in R 
+3. Run the main script written in R:<br>
    **./run_analysis.R**
 
 ## INSTRUCTIONS : *long version* 
-## REQUIREMENTS
+### REQUIREMENTS
 This script can run "as is" with a recent GNU/Linux distribution where a recent version of R and wget are installed.
 
 It was tested and runs succesfully on GNU/Linux : Ubuntu 14.04.2 LTS Trusty
@@ -27,14 +27,14 @@ basically you need at least
 **sudo apt-get install wget***
 on other platforms you can check on the main website of the project : https://www.gnu.org/software/wget/
 for windows users ther is a port available here : http://gnuwin32.sourceforge.net/packages/wget.htm
-but i  don't know if it will work with r 
+but i don't know if it will work with r on windows 
+
 ### CONTEXT
 The goal of this project is to prepare tidy data that can be used for later analysis. 
 Graded will be done by peers on a series of yes/no questions related to the project. 
 This project contains : 
 1. a tidy data set as described below, 
-2. a Github repository with the script performing the analysis [run_analysis.R] and all files except original data, 3. a code book that describes the variables, the data, and any transformations 
-   or work performed to clean up the data called CodeBook.md. 
+2. a Github repository with the script performing the analysis [run_analysis.R] and all files except original data, 3. a code book that describes the variables, the data, and any transformations or work performed to clean up the data called CodeBook.md. 
    
 ### SUBJECT
 One of the most exciting areas in all of data science right now is wearable computing
