@@ -70,7 +70,7 @@ if (!file.exists(data_dir) && (!file.exists(training_set_filename))){
 print(paste("+ I will load traning dataset  :", training_set_filename, "inside r_train"))
 r_train=read.fwf(training_set_filename, widths = rep(c(16),561) )
 
-print(paste("+ I will load test dataset :", training_set_filename, "inside r_test"))
+print(paste("+ I will load test dataset :", test_set_filename, "inside r_test"))
 r_test=read.fwf(test_set_filename, widths = rep(c(16),561))
 
 
