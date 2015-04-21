@@ -1,4 +1,4 @@
-#!/usr/bin/R
+#!/usr/bin/Rscript
 # Coursera Getting and Cleaning Data Course Project
 # github_url : https://github.com/lao-tseu-is-alive/coursera-datacleaning
 # script_name : run_analysis.R
@@ -52,7 +52,7 @@ if (!file.exists(data_filename)){
       op_result <- download.file(data_url, destfile = data_filename, method = "wget")
       if (op_result != 0) {
             print(paste("### ERROR downloading with wget the data archive file from : ", data_url))
-            print("### may be you should check if wget is installed and if you have access to internet" ))
+            print("### may be you should check if wget is installed and if you have access to internet" )
             stop(paste("### ERROR status CODE was : ",op_result))            
       }
 } else {
@@ -126,5 +126,5 @@ colnames(tidy_data)[1]<-"activity"
 print("+ I fix the second column name back to subject")
 colnames(tidy_data)[2]<-"subject"
 
-print(paste("+ I write the final tidy_data to a file on disk :", tidy_data_filename)
+print(paste("+ I write the final tidy_data to a file on disk :", tidy_data_filename))
 write.table(tidy_data,file = tidy_data_filename,row.names = FALSE )
