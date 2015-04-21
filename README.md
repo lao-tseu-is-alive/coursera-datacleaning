@@ -3,29 +3,32 @@
 This file [README.md] explains how to use the script run_analysis.R.  
 The purpose of this project is to demonstrate ability to collect, work with, and clean a data set. 
 
-## INSTRUCTIONS : *short version* 
-clone this repository on your computer under your favorite command line shell with:
+## INSTRUCTIONS : *short version in 3 steps* 
+1. Clone this repository on your computer under your favorite command line shell with:
 
 **git clone https://github.com/lao-tseu-is-alive/coursera-datacleaning.git**
 
-go inside the directory project
+2. Go inside the directory project
 
 **cd coursera-datacleaning**
 
-run the main script written in R 
+3. Run the main script written in R 
 
 **./run_analysis.R**
 
 ## INSTRUCTIONS : *long version* 
 ## REQUIREMENTS
-This script can run "as is" with a recent GNU/Linux distribution and a recent version of R and wget
-it was tested and runs succesfully on GNU/Linux : Ubuntu 14.04.2 LTS Trusty
+This script can run "as is" with a recent GNU/Linux distribution where a recent version of R and wget are installed.
+
+It was tested and runs succesfully on GNU/Linux : Ubuntu 14.04.2 LTS Trusty
 with R version 3.2.0 (2015-04-16) Platform: x86_64-pc-linux-gnu (64-bit)
-it should work with minor adjustments on other platforms like (Windows or Mac)
-basically you need at least a recent version of R for your platform
-you can find install instructions at : http://cran.r-project.org/
-you will also need the wget package for the automatic download of the data
-with ubuntu or debian variant of linux you can install it with this command line 
+
+It should work with minor adjustments on other platforms like (Windows or Mac).
+basically you need at least 
+
+1. a recent version of R for your platform, you can find install instructions at : http://cran.r-project.org/
+
+2. you will also need the wget package for the automatic download of the data. With ubuntu or debian variant of linux you can install it with this command line :
 **sudo apt-get install wget***
 on other platforms you can check on the main website of the project : https://www.gnu.org/software/wget/
 for windows users ther is a port available here : http://gnuwin32.sourceforge.net/packages/wget.htm
