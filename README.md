@@ -5,16 +5,11 @@ The purpose of this project is to demonstrate ability to collect, work with, and
 
 ## INSTRUCTIONS : *short version in 3 steps* 
 1. Clone this repository on your computer under your favorite command line shell with:
-
-**git clone https://github.com/lao-tseu-is-alive/coursera-datacleaning.git**
-
+   **git clone https://github.com/lao-tseu-is-alive/coursera-datacleaning.git**
 2. Go inside the directory project
-
-**cd coursera-datacleaning**
-
+   **cd coursera-datacleaning**
 3. Run the main script written in R 
-
-**./run_analysis.R**
+   **./run_analysis.R**
 
 ## INSTRUCTIONS : *long version* 
 ## REQUIREMENTS
