@@ -56,28 +56,28 @@ a folder named : data
 ### Steps 
 
 1. Patform check to see if user is running Linux,Windows or Mac warning message if the two later platform are used
-	<br>This is  Gnu/Linux Os it should work like a charm. be sure wget is installed
-1.  Check to see if archive is here if it's not download it
-	<br>I found the archive of data here : /home/laotseu/tmp/coursera-datacleaningprojectfiles-UCI_HAR_Dataset.zip
-1. Check if archive already extracted if not do it
-	<br>I found one ot the dataset here : /home/laotseu/tmp/coursera-datacleaningdata/UCI HAR Dataset/train/X_train.txt
+	<br>*example of message: *This is  Gnu/Linux Os it should work like a charm. be sure wget is installed
+1.  Check to see if archive is already in current directory,if it is no need to download it
+	<br>*example of message: *I found the archive of data here : /home/laotseu/tmp/coursera-datacleaningprojectfiles-UCI_HAR_Dataset.zip
+1. Check if the archive was already extracted, if not, just do it
+	<br>*example of message: *I found one ot the dataset here : /home/laotseu/tmp/coursera-datacleaningdata/UCI HAR Dataset/train/X_train.txt
 	<br>+ I think the archive was already extracted ...
 	<br> + so I decide to pass the extract the archive again ...
-1. + I will load traning dataset  : data/UCI HAR Dataset/train/X_train.txt inside r_train
-1. + I will load test dataset : data/UCI HAR Dataset/train/X_train.txt inside r_test
-1. loading fields name from : data/UCI HAR Dataset/features.txt
-1. + I will add column names to the 2 data frames
-1. + I will add the subject column to the train dataset
-1. + I will add the subject column to the test dataset
-1. + I will read the activity labels data
-1. + I will add the activity column to the train dataset
-1. + I will add the activity column to the test dataset
-1. + I will rbind append to the training dataset the test dataset to create data_full dataset
-1. + I will retrieve the column names containing mean()
-1. + I will retrieve the column names containing std()
-1. + I will merge them to get the column filter adding columns 1 ,2 for  activity and subject
-1. + I create data_filtered by taking only the columns filter activity,subject and 66 other fields that have mean() or st() in their names
-1. + I create the tidy dataset from the previous data_filterd (without the 2 first factors columns) with the average of each variable for each activity and each subject by using aggregate
-1. + I fix the first column name back to activity
-1. + I fix the second column name back to subject
-1. + I write the final tidy_data to a file on disk : tidy_projectfiles-UCI_HAR_Dataset.txt
+1. load traning dataset from : data/UCI HAR Dataset/train/X_train.txt inside r_train
+1. load test dataset from : data/UCI HAR Dataset/train/X_train.txt inside r_test
+1. load the fields name from : data/UCI HAR Dataset/features.txt
+1. add the fields (column) names to the 2 data frames (r_train and r_test)
+1. add the subject column to the train dataset (r_train)
+1. add the subject column to the test dataset (r_test)
+1. read the activity labels from data data/UCI HAR Dataset/activity_labels.txt
+1. add the activity column to the train dataset
+1. add the activity column to the test dataset
+1. use rbind to append the test dataset to the training dataset, store it in data_full 
+1. search the column names containing mean()
+1. search the column names containing std()
+1. merge them to get the column filter adding columns 1,2 for  activity and subject
+1. create data_filtered by taking only the columns filter above (activity,subject and 66 other fields that have mean() or st() in their names)
+1. create the tidy dataset from the previous data_filterd (without the 2 first factors columns) with the average of each variable for each activity and each subject by using aggregate
+1. fix the first column name back to activity
+1. fix the second column name back to subject
+1. write the final result tidy_data to a file on disk : tidy_projectfiles-UCI_HAR_Dataset.txt ready to be uploaded to coursera
