@@ -3,13 +3,15 @@
 This file [README.md] explains how to use the script run_analysis.R.  
 The purpose of this project is to demonstrate ability to collect, work with, and clean a data set. 
 
-## INSTRUCTIONS : *short version in 3 steps* 
+## INSTRUCTIONS : *short version in 3 steps for Linux users* 
 1. Clone this repository on your computer under your favorite command line shell with:<br>
    **git clone https://github.com/lao-tseu-is-alive/coursera-datacleaning.git**
 2. Go inside the directory project:<br>
    **cd coursera-datacleaning**
 3. Run the main script written in R:<br>
-   **./run_analysis.R**
+   **./run_analysis.R** 
+maybe you will need to type  **Rscript ./run_analysis.R** depends if your OS support shebang and if the x(eXcution) flag is present on this file (a simple chmod a+x ./run_analysis.R can help)
+this file create the tidy_projectfiles-UCI_HAR_Dataset.txt ready to be uploaded to coursera
 
 ## INSTRUCTIONS : *long version* 
 ### REQUIREMENTS
@@ -28,6 +30,7 @@ basically you need at least
 on other platforms you can check on the main website of the project : https://www.gnu.org/software/wget/
 for windows users ther is a port available here : http://gnuwin32.sourceforge.net/packages/wget.htm
 but i don't know if it will work with r on windows 
+3. On MS Windows some changes may be needed to the path variables because Windows use a backslash as directory separator and nix OS uses a simple slash, feel free to edit the variables ending with "*_filename" on lines 33-40 if you want to test on windows.
 
 ### CONTEXT
 The goal of this project is to prepare tidy data that can be used for later analysis. 
